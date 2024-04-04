@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada City Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .city-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .city-image:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Canada City Image Gallery</h1>
+    </header>
+    <nav>
+        <a href="#toronto">Toronto</a>
+        <a href="#vancouver">Vancouver</a>
+        <a href="#montreal">Montreal</a>
+    </nav>
+    <main>
+        <div id="toronto">
+            <h2>Toronto</h2>
+            <img class="city-image" src="https://cdn.britannica.com/31/76031-050-162E5900/CN-Tower-rest-skyline-Toronto-world-structure.jpg" alt="Toronto">
+        </div>
+        <div id="vancouver">
+            <h2>Vancouver</h2>
+            <img class="city-image" src="https://www.tripsavvy.com/thmb/XQH1lvbIsmSeBgD14Q3ssgNex3Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-534612574-5b11609743a10300368c9314.jpg" alt="Vancouver">
+        </div>
+        <div id="montreal">
+            <h2>Montreal</h2>
+            <img class="city-image" src="https://a.cdn-hotels.com/gdcs/production57/d1823/756d9f39-5aef-4974-a09b-4c8beed78e66.jpg" alt="Montreal">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Canada City Image Gallery</p>
+    </footer>
+</body>
+</html>
+
+
